@@ -1,0 +1,9 @@
+spring.application.name=chchingpoc
+
+spring.redis.host=redis-17895.c91.us-east-1-3.ec2.redns.redis-cloud.com
+spring.redis.port=17895
+spring.redis.password='thbMtarmjZQtww54y7azrkvrrGGCn3Zt'
+#spring.redis.ssl=true
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+logging.level.org.springframework.data.redis=DEBUG

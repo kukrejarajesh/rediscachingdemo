@@ -1,0 +1,23 @@
+package com.rajesh.cachingpoc.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class ApiService {
+    
+    private final RestTemplate restTemplate;
+
+    @Autowired
+    public ApiService(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
+    public String callExternalApi() {
+        //String url = "https://api.example.com/data"; // Replace with your API endpoint
+        String url= "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Bengaluru?unitGroup=us&key=HYDTFKPHURE5EF62XTFWDZUGT&contentType=json";
+        String response = restTemplate.getForObject(url, String.class);
+        return response;
+    }
+}

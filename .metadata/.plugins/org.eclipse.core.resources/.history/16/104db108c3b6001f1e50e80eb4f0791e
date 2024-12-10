@@ -1,0 +1,5 @@
+package com.rajesh.cachingpoc.model;
+
+public class WeatherData {
+
+}

@@ -1,0 +1,5 @@
+package com.rajesh.cachingpoc.config;
+
+public class AppConfig {
+
+}

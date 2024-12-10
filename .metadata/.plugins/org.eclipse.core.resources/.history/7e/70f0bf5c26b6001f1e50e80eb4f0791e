@@ -1,0 +1,5 @@
+package com.rajesh.cachingpoc.controller;
+
+public class WeatherController {
+
+}
